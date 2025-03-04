@@ -13,9 +13,9 @@ const HomePage = () => {
       </div>
       
       {/* Overlay */}
-      <div className="absolute inset-0 bg-opacity-40 flex flex-col items-center justify-center text-center px-6">
+      <div className="absolute inset-0 bg-opacity-40 flex flex-col items-start justify-center text-center px-6">
         <h2 className="text-white text-lg">Welcome to</h2>
-        <h1 className="text-4xl md:text-5xl font-bold text-green-400">Hulk Gym</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-white">Hulk Gym</h1>
         <button onClick={() => navigate("/workoutplan")} className="mt-4 bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600">
           Join for free
         </button>
