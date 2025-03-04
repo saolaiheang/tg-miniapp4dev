@@ -1,9 +1,47 @@
 import { useEffect } from "react";
 
+
+
+import { useSelector } from "react-redux";
+
+
+import { RootState } from "../store/store";
+
+
+
 const ProfilePage = () => {
+
+
+  const userInfo = useSelector((state: RootState) => state.auth.userInfo);
+
+
+  const initData = useSelector((state: RootState) => state.auth.initData);
+
+
+  const token = useSelector((state: RootState) => state.auth.token);
+
+
+
+
+
+  console.log("userInfo:", userInfo);
+
+
+  console.log("initData:", initData);
+
+
+  console.log("token:", token);
+
+
+
+
   useEffect(() => {
+
     window.Telegram.WebApp.expand();
+
   }, []);
+
+
 
   const renderUserInfo = () => {
     // if (!userInfo) return <></>;
