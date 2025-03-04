@@ -49,10 +49,12 @@ function App() {
       } catch (error) {
         console.error("Login Error:", error);
       }
+
     };
 
     login();
   }, [dispatch]);
+
 
   return (
     <>
