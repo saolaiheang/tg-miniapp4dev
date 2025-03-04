@@ -36,7 +36,7 @@ const appRoutes: AppRoute[] = [
     path: "/",
     element: <Layout />,
     children: [
-      { path: webRoutes.home, element: <ProfilePage /> },
+      { path: webRoutes.home, element: <HomePage /> },
       { path: webRoutes.pricing, element: <Pricing /> },
 
 
