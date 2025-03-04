@@ -11,7 +11,7 @@ interface BranchCardProps {
 
 const BranchCard: React.FC<BranchCardProps> = ({ branchName, location, phone, imageSrc }) => {
   return (
-    <div className="flex items-center gap-6 p-3 bg-gray-300 rounded-2xl w-full md:w-3/4 lg:w-1/2 mx-auto">
+    <div className="flex items-center gap-6 p-3 bg-white  rounded-2xl w-full md:w-3/4 lg:w-1/2 mx-auto">
       <div className="flex justify-start">
         <img
           className="w-70 h-40 object-cover shadow-xl rounded-md transition-transform duration-300 ease-in-out transform hover:scale-110 "
