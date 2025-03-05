@@ -8,7 +8,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-white shadow-md rounded-b-lg py-4 flex items-center justify-between relative">
+    <div className="bg-white shadow-md rounded-b-lg py-4 flex items-center justify-between relative z-99 ">
       {/* Profile Section */}
       <div className="flex items-center gap-2">
         <img
