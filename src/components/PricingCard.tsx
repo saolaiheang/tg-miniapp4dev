@@ -65,12 +65,12 @@ import React from 'react';
 
 // Define the types for the props
 interface PricingCardProps {
-  title: string;
+  plan_name: string;
   price: string;
   imageSrc?: string;
 }
 
-const PricingCard: React.FC<PricingCardProps> = ({ title, price, imageSrc }) => {
+const PricingCard: React.FC<PricingCardProps> = ({ plan_name, price, imageSrc }) => {
   return (
     <div className="flex items-center gap-6 p-3 bg-gray-300 rounded-2xl w-full md:w-3/4 lg:w-1/2 mx-auto">
       <div className="flex justify-start">
@@ -80,9 +80,9 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, imageSrc }) => 
           src={imageSrc || 'src/pages/download.jpeg'}
         />
       </div>
-      <div className="flex flex-col text-left">
-        <span className="text-2xl text-black font-jomhuria font-bold">Basic {title}</span>
-        <span className="text-black">20$/month {price}</span>
+      <div className="flex flex-col text-left flex-1/2">
+        <span className="text-2xl text-black font-jomhuria font-bold"> {plan_name}</span>
+        <span className="text-black"> {price}/month</span>
         <button className="mt-4 bg-green-600 text-white w-20  rounded-md ">
           View 
         </button>
