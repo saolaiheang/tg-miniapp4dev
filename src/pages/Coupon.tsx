@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Menu, Phone, Dumbbell } from "lucide-react"
+import Navbar from "../components/header"
 
 export default function Coupon() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -18,17 +19,7 @@ export default function Coupon() {
       </div>
 
       {/* Header */}
-      <header className="relative z-10 flex items-center justify-between p-4 bg-white bg-opacity-10 backdrop-blur-sm">
-        <div className="flex items-center gap-3">
-          <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#5c9c31]">
-            <img src="/placeholder.svg?height=64&width=64" alt="Profile" className="w-full h-full object-cover" />
-          </div>
-          <h1 className="text-xl font-bold">Thorn Thavann</h1>
-        </div>
-        <button onClick={() => setMenuOpen(!menuOpen)} className="text-[#ffffff] p-2">
-          <Menu size={28} />
-        </button>
-      </header>
+      < Navbar />
 
       {/* Mobile Menu */}
       {menuOpen && (
