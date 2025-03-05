@@ -55,14 +55,15 @@ const Promotion = () => {
     fetchPromotions();
   }, []);
   return (
-    <div className="bg-gray-100 min-h-screen flex justify-center p-4 sm:p-6">
+    <div className="min-h-screen flex justify-center p-4 sm:p-6 ">
       <motion.div
-        className="max-w-sm sm:max-w-md w-full bg-white rounded-2xl shadow-2xl overflow-hidden"
+        className="max-w-sm sm:max-w-md w-full  rounded-2xl shadow-2xl overflow-hidden"
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.3 }}
       >
+              <h1 className="p-6 text-4xl font-bold text-[#5C9C31]">Promotion</h1>
+
         {/* Header */}
-        <Navbar />
 
         {/* Image Section */}
         <div className="relative">

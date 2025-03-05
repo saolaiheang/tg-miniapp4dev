@@ -21,14 +21,12 @@ export interface AppRoute {
 
 export const webRoutes = {
   home: "/",
-
   workoutplan:"/workoutplan",
-  workout:"/workout/:id/workouts"
-
+  workout:"/workout/:id/workouts",
   pricing: "/Pricing",
   promotion: "/promotion",
-  workoutplan:"/workoutplan",
-  coupon: "/coupon"
+  coupon: "/coupon",
+  branch:"/branch"
  
   // discover: "/discover",
 };
@@ -50,6 +48,7 @@ const appRoutes: AppRoute[] = [
       { path: webRoutes.promotion, element: <Promotion /> },
       { path: webRoutes.workoutplan, element: <WorkoutPlanPage /> },
       { path: webRoutes.workout, element: <WorkoutPage /> },
+      { path: webRoutes.branch, element: <Branch /> },
 
       // { path: webRoutes.discover, element: <DiscoverPage /> },
     ],
