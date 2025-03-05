@@ -28,9 +28,11 @@ const Navbar = () => {
       {menuOpen && (
         <div className="absolute top-15 p-2 text-left  bg-gray-400 shadow-lg rounded-lg w-[100%] ">
           <ul className="space-y-1">
+          <li onClick={() => navigate("/")} className="p-2 hover:bg-gray-200 text-black cursor-pointer">Home page</li>
             <li onClick={() => navigate("/workoutplan")} className="p-2 hover:bg-gray-200 text-black cursor-pointer">Workout Plan</li>
-            <li onClick={() => navigate("/")} className="p-2 hover:bg-gray-200 text-black cursor-pointer">Home page</li>
             <li onClick={() => navigate("/promotion")} className="p-2 hover:bg-gray-200 text-black cursor-pointer">Promotion page</li>
+            <li onClick={() => navigate("/branch")} className="p-2 hover:bg-gray-200  text-black cursor-pointer">Brach page</li>
+            <li onClick={() => navigate("/pricing")} className="p-2 hover:bg-gray-200  text-black cursor-pointer">Pricing page</li>
           </ul>
         </div>
       )}

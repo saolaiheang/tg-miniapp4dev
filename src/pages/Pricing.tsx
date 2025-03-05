@@ -89,7 +89,11 @@ const Pricing = () => {
     }, []);
 
     return (
-        <div className="space-y-4">
+        
+        <div className="space-y-6 mt-4">
+            <h1 className=" text-4xl font-bold  text-[#5C9C31]">Hurry up with pricing!</h1>
+            <p className="text-2xl">enjoy with the pricing!!</p>
+         
             {pricingData.length > 0 ? (
                 pricingData.map((item, index) => (
                     <PricingCard key={index} plan_name={item.plan_name} price={item.price} />
